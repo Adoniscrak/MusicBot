@@ -19,14 +19,7 @@ const client = new Discord.Client({
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.color = config.color;
-
-/* SISTEMA DE IDIOMAS */
-client.la = {};
-let idiomas = fs.readdirSync('./idiomas').filter(archivo => archivo.endsWith(".json")).map(idioma => idioma.replace(/.json/, ""));
-for(const idioma of idiomas){
-    client.la[idioma] = require(`./idiomas/${idioma}`)
-}
-Object.freeze(client.la);
+client.colorError = config.colorError;
 
 //Cargamos los handlers
 fs.readdirSync('./handlers').forEach(handler => {
