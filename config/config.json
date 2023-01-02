@@ -1,7 +1,6 @@
 {
     "token": "",
-    "prefix": ">>",
-    "mongodb": "",
-    "ownerIDS": ["282942681980862474"],
-    "color": "#ff0000"
+    "prefix": "m!",
+    "color": "#6C3483"
+    "colorError": "#FF0000"
 }
